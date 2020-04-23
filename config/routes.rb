@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   post '/community/update', to: 'community#update'
   get '/auth/:provider/callback', to: 'sessions#create'
   get '/omniauth', to: 'sessions#GitHub'
-  get '/test', to: 'sessons#test'
+  get '/test', to: 'sessions#test'
   
   resources :themes
   resources :kits
