@@ -1,0 +1,33 @@
+#PostgreSQL. Versions 8.2 and up are supported.
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: biapi_development
+  pool: 5
+  username: jgrantps
+  host: localhost
+  password: 1234
+  timeout: 5000
+
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: biapi_test
+  pool: 5
+  host: localhost
+  username: jgrantps
+  password: 1234
+  timeout: 5000
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: biapi_production
+  pool: 5
+  host: https://biapi112.herokuapp.com/
+  username: jgrantps
+  password: 1234
+  timeout: 5000
+  
