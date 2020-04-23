@@ -3,6 +3,10 @@ class SessionsController < ApplicationController
   
   require 'open-uri'
 
+  def test
+    render json: {message: "I'm working!"}  
+  end
+
   def create
    
     if request.env["omniauth.auth"]
